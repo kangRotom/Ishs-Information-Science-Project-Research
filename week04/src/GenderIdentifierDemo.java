@@ -15,6 +15,9 @@ public class GenderIdentifierDemo {
             case '4':
                 System.out.println("Female");
                 break;
+            default:
+                System.out.println("Wrong ssd!");
+                break;
         }
     }
 }
