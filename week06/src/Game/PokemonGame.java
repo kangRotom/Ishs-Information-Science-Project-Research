@@ -8,7 +8,10 @@ public class PokemonGame {
         Pokemon bulbasuar = new Pokemon();
 
         pikachu.evolve();
-        pikachu.attack(charizard);   bulbasuar.setName("이상해씨");
+        pikachu.attack(charizard);
+
+        bulbasuar.setName("이상해씨");
+        bulbasuar.attack();
 
         charizard.evolve();
         charizard.attack(pikachu);

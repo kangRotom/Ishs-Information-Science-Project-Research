@@ -7,19 +7,29 @@ public class Pokemon {
     private String name;
     private int level;
     private int hp;
+
+    private static int count = 0;
+
     //constructor
 
     public Pokemon(String name, int level, int hp) {
         this.name = name;
         this.level = level;
         this.hp = hp;
+        count++;
     }
 
     public Pokemon(String name) {
-        this(name,1,50);
+        this.name = name;
+        // this(name,1,50);
+        count++;
     }
 
     public Pokemon() {
+    }
+
+    public static int getCount() {
+        return count;
     }
 
     //getter setter
@@ -57,5 +67,9 @@ public class Pokemon {
     void attack(Pokemon pokemon){
         System.out.println(this.name+"가(이) "+pokemon.name+"에게 기본 공격을 시전합니다");
 
+    }
+
+    void attack(){
+        System.out.println(this.name+"가(이) 광역 공격을 시전합니다");
     }
 }
