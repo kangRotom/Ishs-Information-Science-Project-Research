@@ -5,11 +5,13 @@ public class PokemonGame {
         Pokemon pikachu = new Pokemon();
         Pokemon charizard = new Pokemon();
 
-        pikachu.name = "피카츄";
-        charizard.name = "리자몽";
+        pikachu.setName("피카츄");
+        pikachu.setLevel(21);
+        pikachu.setHp(100);
 
-        pikachu.level = 21;
-        charizard.level = 36;
+        charizard.setName("리자몽");
+        charizard.setLevel(36);
+        charizard.setHp(150);
 
         pikachu.evolve();
         pikachu.attack();
