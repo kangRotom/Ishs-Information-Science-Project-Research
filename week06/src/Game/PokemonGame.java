@@ -14,9 +14,9 @@ public class PokemonGame {
         charizard.setHp(150);
 
         pikachu.evolve();
-        pikachu.attack();
+        pikachu.attack(charizard);
 
         charizard.evolve();
-        charizard.attack();
+        charizard.attack(pikachu);
     }
 }

@@ -39,7 +39,8 @@ public class Pokemon {
         System.out.println(name+"가 "+level+ "레벨로 성장 합니다");
     }
 
-    void attack(){
-        System.out.println("기본 공격을 시전합니다");
+    void attack(Pokemon pokemon){
+        System.out.println(this.name+"가(이) "+pokemon.name+"에게 기본 공격을 시전합니다");
+
     }
 }
