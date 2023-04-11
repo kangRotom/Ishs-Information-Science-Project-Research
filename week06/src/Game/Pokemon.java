@@ -7,7 +7,22 @@ public class Pokemon {
     private String name;
     private int level;
     private int hp;
+    //constructor
 
+    public Pokemon(String name, int level, int hp) {
+        this.name = name;
+        this.level = level;
+        this.hp = hp;
+    }
+
+    public Pokemon(String name) {
+        this(name,1,50);
+    }
+
+    public Pokemon() {
+    }
+
+    //getter setter
     public int getLevel() {
         return level;
     }

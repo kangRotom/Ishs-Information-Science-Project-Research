@@ -2,21 +2,19 @@ package Game;
 
 public class PokemonGame {
     public static void main(String[] args) {
-        Pokemon pikachu = new Pokemon();
-        Pokemon charizard = new Pokemon();
-
-        pikachu.setName("피카츄");
-        pikachu.setLevel(21);
-        pikachu.setHp(100);
-
-        charizard.setName("리자몽");
-        charizard.setLevel(36);
-        charizard.setHp(150);
+        Pokemon squirtle = new Pokemon("꼬부기");
+        Pokemon pikachu = new Pokemon("피카츄",21,100);
+        Pokemon charizard = new Pokemon("리자몽",36,250);
+        Pokemon bulbasuar = new Pokemon();
 
         pikachu.evolve();
-        pikachu.attack(charizard);
+        pikachu.attack(charizard);   bulbasuar.setName("이상해씨");
 
         charizard.evolve();
         charizard.attack(pikachu);
+
+        System.out.println(squirtle.getName());
+        squirtle.setName("어니부기");
+        System.out.println(squirtle.getName());
     }
 }
