@@ -1,4 +1,4 @@
-package Game;
+package Game2;
 
 public class Pokemon {
     //encapsulation
