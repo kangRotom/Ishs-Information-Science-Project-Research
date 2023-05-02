@@ -27,5 +27,7 @@ public class SingletonDemo {
         }else{
             System.out.println("Different object!");
         }
+        System.out.println(s1);
+        System.out.println(s2);
     }
 }
