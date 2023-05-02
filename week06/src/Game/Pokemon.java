@@ -26,6 +26,7 @@ public class Pokemon {
     }
 
     public Pokemon() {
+        count++;
     }
 
     public static int getCount() {
