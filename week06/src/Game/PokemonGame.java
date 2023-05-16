@@ -14,6 +14,7 @@ public class PokemonGame {
         bulbasuar.attack();
 
         charizard.evolve();
+        charizard.getLevel();
         charizard.attack(pikachu);
 
         System.out.println(squirtle.getName());

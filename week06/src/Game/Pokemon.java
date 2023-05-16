@@ -10,8 +10,7 @@ public class Pokemon {
 
     private static int count = 0;
 
-    //constructor
-
+//constructor
     public Pokemon(String name, int level, int hp) {
         this.name = name;
         this.level = level;
