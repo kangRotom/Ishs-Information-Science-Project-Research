@@ -1,10 +1,10 @@
 package Game;
-
 public class PokemonGame {
     public static void main(String[] args) {
         Pikachu pikachu = new Pikachu(1, 35);
         Squirtle squirtle = new Squirtle();
         Charizard charizard = new Charizard();
+        pikachu.hp = 99;
         System.out.println(charizard.name);
         squirtle.setLevel(1);
         squirtle.setHp(100);
