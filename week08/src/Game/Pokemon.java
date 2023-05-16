@@ -28,4 +28,8 @@ public class Pokemon {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void attack(){
+        System.out.println(this.getName()+"이(가) 광역 공격을 합니다.");
+    }
 }

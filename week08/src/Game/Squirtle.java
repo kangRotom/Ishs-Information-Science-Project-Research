@@ -13,4 +13,8 @@ public class Squirtle extends Pokemon {
         this.setLevel(level);
         this.setName("꼬부기");
     }
+
+    public void attack() {
+        System.out.println(this.getName()+"이(가) 광역 물대포 공격을 합니다.");
+    }
 }

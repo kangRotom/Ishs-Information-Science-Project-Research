@@ -13,4 +13,9 @@ public class Charizard extends Pokemon {
         this.setLevel(level);
         this.setName("리자몽");
     }
+
+    public void attack() {
+        super.attack();
+        System.out.println(this.getName()+"이(가) 광역 화염방사 공격을 합니다.");
+    }
 }

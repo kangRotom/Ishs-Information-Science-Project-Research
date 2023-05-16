@@ -10,5 +10,8 @@ public class PokemonGame {
         squirtle.setHp(100);
         System.out.println(squirtle.getHp());
         System.out.println(pikachu.getHp());
+        pikachu.attack();
+        squirtle.attack();
+        charizard.attack();
     }
 }

@@ -12,4 +12,8 @@ public class Pikachu extends Pokemon {
         this.setLevel(level);
         this.setName("피카츄");
     }
+
+    public void attack() {
+        super.attack();
+    }
 }
