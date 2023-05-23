@@ -1,7 +1,7 @@
 package Game;
 public class PokemonGame {
     public static void main(String[] args) {
-
+        //Pokemon pokemon1 = new Pokemon(); //abstract class can't initiate instance
         Squirtle squirtle1 = new Squirtle();
         Charizard charizard = new Charizard(36, 400);
         Pokemon pokemon = new Pikachu(14, 265); //upcast
