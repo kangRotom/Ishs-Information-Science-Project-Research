@@ -9,5 +9,12 @@ public class PokemonGame {
 
         pikachu.MillionVolt();
         //pokemon.MillionVolt(); //can't use child method
+
+        Pikachu pikachu2 = (Pikachu) pokemon; //downcast
+        pikachu2.MillionVolt();
+        System.out.println(pokemon.getHp());
+        System.out.println(pikachu2.getHp());
+
+        System.out.println(pikachu2); //same address (pokemon)
     }
 }
