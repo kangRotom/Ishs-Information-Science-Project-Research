@@ -11,6 +11,11 @@ public class PokemonGame {
         //pokemon.MillionVolt(); //can't use child method
 
         Pikachu pikachu2 = (Pikachu) pokemon; //downcast
+        Squirtle squirtle1 = (Squirtle) pokemon;
+        /*
+        Exception in thread "main" java.lang.ClassCastException: class Game.Pikachu cannot be cast to class Game.Squirtle (Game.Pikachu and Game.Squirtle are in unnamed module of loader 'app')
+	at Game.PokemonGame.main(PokemonGame.java:14)
+         */
         pikachu2.MillionVolt();
         System.out.println(pokemon.getHp());
         System.out.println(pikachu2.getHp());
