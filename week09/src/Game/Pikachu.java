@@ -12,6 +12,13 @@ public class Pikachu extends Pokemon {
         this.level = level;
         this.name = "피카츄";
     }
+
+    @Override
+    public void attack() {
+        //super.attack();
+        System.out.println(this.name+" does a wide area electric attack");
+    }
+
     void MillionVolt(){
         System.out.println("백만볼트!!");
     }

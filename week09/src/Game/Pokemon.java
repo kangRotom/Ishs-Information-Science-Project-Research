@@ -33,4 +33,8 @@ public class Pokemon {
     public void attack(){
         System.out.println(this.getName()+"이(가) 광역 공격을 합니다.");
     }
+
+    public void attack(Pokemon target){
+        System.out.println(this.name+" does a attack to "+target.name);
+    }
 }

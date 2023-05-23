@@ -14,7 +14,13 @@ public class Squirtle extends Pokemon {
         this.name = "꼬부기";
     }
 
-    public void WaterCannon() {
-        System.out.println("물대포!!");
+    public void attack() {
+        //super.attack();
+        System.out.println(this.name+" does a wide area aqua attack");
+    }
+
+    public void HydroPump() {
+        System.out.println("하이드로펌프!!");
     }
 }
+
