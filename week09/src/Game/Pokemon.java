@@ -1,10 +1,20 @@
 package Game;
 
 public abstract class Pokemon {
-    // private -> protected
     protected int level;
     protected int hp;
     protected String name;
+
+    public void setFlyable(Flybehavior flyable) {
+        this.flyable = flyable;
+    }
+
+    public void performFly(){
+        System.out.print(this.name);
+        this.flyable.fly();
+    }
+
+    Flybehavior flyable;
 
     public int getLevel() {
         return level;
