@@ -21,5 +21,9 @@ public class PokemonGame {
         //Charizard charizard1 = (Pikachu) charizard; //incompatible
         Charizard charizard1 = (Charizard) charizard;
         charizard1.FireBlast(); //downcast success
+
+        Balloon Redballoon = new Balloon();
+        pikachu1.setFlyable(Redballoon); // strategy change
+        pikachu1.performFly();
     }
 }
