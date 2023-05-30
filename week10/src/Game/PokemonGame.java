@@ -10,5 +10,16 @@ public class PokemonGame {
         charizard.performFly();
         pikachu.setFlyable(ISHSjetpack);
         pikachu.performFly();
+        //below methods can't use with parent's variable
+//        pikachu.attack();
+//        charizard.attack();
+
+        // Pikachu pikachu1 = new Pokemon(); //downcast is impossible
+        Pikachu pikachu1 = (Pikachu) pikachu; //downcast success
+        pikachu1.MillionVolt();
+
+        //Charizard charizard1 = (Pikachu) charizard; //incompatible
+        Charizard charizard1 = (Charizard) charizard;
+        charizard1.FireBlast(); //downcast success
     }
 }
