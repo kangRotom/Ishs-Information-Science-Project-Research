@@ -1,6 +1,6 @@
 package Game;
 public class PokemonGame {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Digimon d1 = new Agumon();
 
         Pokemon charizard = new Charizard(36, 400);
@@ -33,5 +33,11 @@ public class PokemonGame {
         Balloon Redballoon = new Balloon();
         pikachu1.setFlyable(Redballoon); // strategy change
         pikachu1.performFly();
+
+        try {
+            pikachu1.attack(d1);
+        } catch (Exception e){
+            throw new Exception();
+        }
     }
 }

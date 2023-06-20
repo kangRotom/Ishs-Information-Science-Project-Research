@@ -1,4 +1,4 @@
 package Game;
 
-public class Digimon extends Animation{
+public abstract class Digimon extends Animation{
 }
